@@ -118,3 +118,56 @@ body {
     margin: 0 10px 0 0;
   }
 }
+
+.tag-size-7{
+  font-size: 70px;
+  color: #cc00cc;
+}
+
+.tag-size-5{
+  font-size: 60px;
+  color: #cc00cc;
+}
+
+.tag-size-4{
+  font-size: 55px;
+  color: #33adff;
+}
+
+.tag-size-3{
+  font-size: 45px;
+  color:#66ff99;
+}
+
+.tag-size-2{
+  font-size: 35px;
+  color:  #ce99ff;
+}
+
+.tag-size-1{
+  font-size: 25px;
+  color: #00FFFF;
+}
+.tags.list {
+      li  {
+        display:inline-block;
+        padding:0px 4px;
+        font-family: 'Sail', cursive;
+          }
+}
+
+.tags.list a {
+  text-decoration: none;
+}
+
+.authors.list {
+  li  {
+    display:inline-block;
+    padding:0px 4px;
+    font-family: 'Sail', cursive;
+      }
+}
+
+.authors.list a {
+  text-decoration: none;
+}
