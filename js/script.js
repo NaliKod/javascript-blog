@@ -8,7 +8,7 @@ const templates = {
   tagLink: Handlebars.compile(document.querySelector('#template-tag-link').innerHTML),
   authorLink: Handlebars.compile(document.querySelector('#template-author-link').innerHTML),
   tagCloudLink: Handlebars.compile(document.querySelector('#template-tag-cloud-link').innerHTML),
-  authorCloudLink: Handlebars.compile(document.querySelector('#template-authorCloud-link').innerHTML),
+  authorCloudLink: Handlebars.compile(document.querySelector('#template-author-cloud-link').innerHTML),
 };
 
 const titleClickHandler = function (event) {
@@ -301,10 +301,10 @@ function generateAuthors() {
   const authorsParams = calculateTagsParams(allAuthors);
   console.log('authorsParams:', authorsParams);
   //let allAuthorsHTML = '';
-  const allAuthorsData = {tags: []};
+  const allAuthorsData = {authors: []};
   for (let author in allAuthors) {
     //const authorLinkHTML = '<li><a class="' + calculateTagClass(allAuthors[author], authorsParams) + '" href="#author-' + author + '">' + author + '</a></li>';
-    allAuthorsData.tags.push({
+    allAuthorsData.authors.push({
       author: author,
       count: allAuthors[author],
       className: calculateTagClass(allAuthors[author], authorsParams)
